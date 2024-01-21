@@ -1,0 +1,394 @@
+class train 
+{
+    int choice;
+    public:
+    	 train()
+    	{
+		
+    cout << "=======================================================";
+    cout << "\n               Train ticket booking\n ";
+    cout << "=======================================================\n\n";
+
+    cout << "\n\n1. Book Train ticket.\n2. Train Schedule.\n3. Exit.\n";
+    cout << "Enter the choice 1 to 3: ";
+    cin >> choice;
+}
+     int procedure()
+     {
+	 
+    switch (choice)
+    {
+    case 1:
+    {
+        cout << "\nThis Web has specific destinations to travel.\n"; // For Train Schedule.
+        cout << "Specific Destinations:\n";
+        cout << "\n1. 12567 PUNE - HYDERABAD.\n2. 11078 PUNE - LATUR.\n";
+
+        int choice2;
+        cout << "Enter your Train no.: ";
+        cin >> choice2;
+
+        switch (choice2)
+        {
+            case 12567:
+            {
+            cout << "\n\n=====================================";
+            cout << "\n  Welcome to Hyderabad Tours";
+            cout << "\n=====================================";
+
+            cout << "\n\nAvailable Trains:\n\n";
+            cout << "----------------------------------\n";
+            cout << "| (12567) Hyderabad EX.          |\n";
+            cout << "| 10:30(AM)-------------06:00(PM)|\n";
+            cout << "----------------------------------\n";
+
+            cout << "----------------------------------\n";
+            cout << "| (12567) Pune(s) EX.            |\n";
+            cout << "| 07:30(PM)-------------03:00(AM)|\n";
+            cout << "----------------------------------\n";
+            
+            int Hyderabad;
+            cout<<"\nenter your train choice :\n";
+            cin>>Hyderabad;
+            
+            switch(Hyderabad)
+			{
+				case 1:
+				{
+					cout << "----------------------------------\n";
+                    cout << "| (12567) Hyderabad EX.          |\n";
+                    cout << "| 10:30(AM)-------------06:00(PM)|\n";
+                    cout << "----------------------------------\n";
+                    
+                    char name[100];
+                    char gender[45];
+                    int age;
+					cout<<"\n\nEnter your name :";
+                    cin>>name;
+                    cout<<"\nEnter your age :";
+                    cin>>age;
+                    cout<<"\nEnter your gender(M/F):";
+                    cin>>gender;
+                    
+                    int ticketPrice;
+
+                    if (age <= 18)
+                    {
+                    ticketPrice = 200;
+                    cout<<"\nPrice200";
+                    }
+                    else if (age <= 5)
+                    {
+                    ticketPrice = 0;
+                    cout<<"\nPrice0";
+                    }
+                    else if (age >= 70)
+                    {
+                    ticketPrice = 100;
+                    cout<<"\nPrice:100";
+                    }
+                    else
+                    {
+                    ticketPrice = 450;
+                    cout<<"\n450";
+                    }
+
+                    char reply[10];
+                    cout << "\nYou want to confirm your ticket (yes/no): ";
+                     cin >> reply;
+
+                    if (strcmp(reply, "yes") == 0)
+                    {
+                    cout << "\nYour Ticket Is Confirmed ..\n Your ticket:\n";
+                    cout<<"Your name:"<<name<<endl;
+                    cout<<"Your Age:"<<age<<endl;
+                    cout<<"Your Gender:"<<gender<<endl;
+                    cout << "----------------------------------\n";
+                    cout << "| (12567) Hyderabad EX.          |\n";
+                    cout << "| 10:30(AM)-------------06:00(PM)|\n";
+                    cout << "----------------------------------\n";
+                    
+                    }
+                    else
+                    {
+                    cout << "\nThank you for visiting our website.";
+                    }
+                    break;
+                }
+				case 2:
+				{
+					cout << "----------------------------------\n";
+                    cout << "| (12567) Pune(s) EX.            |\n";
+                    cout << "| 07:30(PM)-------------03:00(AM)|\n";
+                    cout << "----------------------------------\n";
+                    
+                    char name[100];
+                    char gender[45];
+                    int age;
+	     cout<<"\n\nEnter your name :";
+                    cin>>name;
+                    cout<<"\nEnter your age :";
+                    cin>>age;
+                    cout<<"\nEnter your gender(M/F):";
+                    cin>>gender;
+                    
+                    int ticketPrice;
+
+                    if (age <= 18)
+                    {
+                    ticketPrice = 200;
+                    cout<<"\nPrice:200";
+                    }
+                    else if (age <= 5)
+                    {
+                    ticketPrice = 0;
+                    cout<<"\nPrice:0";
+                    }
+                    else if (age >= 70)
+                    {
+                    ticketPrice = 100;
+                    cout<<"\nPrice:100";
+					}
+                    else
+                    {
+                    ticketPrice = 450;
+                    cout<<"\n450";
+				    }
+
+                    char reply[10];
+                    cout << "\nYou want to confirm your ticket (yes/no): ";
+                     cin >> reply;
+
+                    if (strcmp(reply, "yes") == 0)
+                    {
+                    cout << "\nYour Ticket Is Confirmed   .. \nYour ticket:\n";
+                     cout<<"Your name:"<<name<<endl;
+                    cout<<"Your Age:"<<age<<endl;
+                    cout<<"Your Gender:"<<gender<<endl;
+                    cout << "----------------------------------\n";
+                    cout << "| (12567) Pune(s) EX.            |\n";
+                    cout << "| 07:30(PM)-------------03:00(AM)|\n";
+                    cout << "----------------------------------\n";
+                    }
+                    else
+                    {
+                    cout << "\nThank you for visiting our website.";
+                    }
+					break;
+				}
+			} 
+            
+            break; // Added break to exit the switch case
+            }
+            case 11078:
+            {
+            cout << "\n\n=====================================";
+            cout << "  \nWelcome to Latur Tours";
+            cout << "\n====================================";
+
+            cout << "\n\nAvailable Trains:\n\n";
+            cout << "----------------------------------\n";
+            cout << "| (11078) Latur EX.              |\n";
+            cout << "| 10:00(AM)-------------08:00(PM)|\n";
+            cout << "----------------------------------\n";
+
+            cout << "----------------------------------\n";
+            cout << "| (11078) Pune(L) EX.            |\n";
+            cout << "| 09:30(PM)-------------08:00(AM)|\n";
+            cout << "----------------------------------\n";
+            
+            int latur;
+            cout<<"\nenter your train choice :\n";
+            cin>>latur;
+            
+            switch(latur)
+			{
+				case 1:
+			    {
+                    cout << "----------------------------------\n";
+                    cout << "| (11078) Latur EX.              |\n";
+                    cout << "| 10:00(AM)-------------08:00(PM)|\n";
+                    cout << "----------------------------------\n";
+                    
+                    char name[100];
+                    char gender[45];
+                    int age;
+					cout<<"\n\nEnter your name :";
+                    cin>>name;
+                    cout<<"\nEnter your age :";
+                    cin>>age;
+                    cout<<"\nEnter your gender(M/F):";
+                    cin>>gender;
+                    
+                    int ticketPrice;
+
+                    if (age <= 18)
+                    {
+                    ticketPrice = 200;
+                    cout<<"\nPrice:200";
+                    }
+                    else if (age <= 5)
+                    {
+                    ticketPrice = 0;
+                    cout<<"\nPrice:0";
+					}
+                    else if (age >= 70)
+                    {
+                    ticketPrice = 100;
+                    cout<<"\nPrice:100";
+					}
+                    else
+                    {
+                    ticketPrice = 450;
+                    cout<<"\nPrice:450";
+                    }
+
+                    char reply[10];
+                    cout << "\nYou want to confirm your ticket (yes/no): ";
+                     cin >> reply;
+
+                    if (strcmp(reply, "yes") == 0)
+                    {
+                    cout << "\nYour Ticket Is Confirmed ..   \nYour ticket:\n";
+                     cout<<"Your name:"<<name<<endl;
+                    cout<<"Your Age:"<<age<<endl;
+                    cout<<"Your Gender:"<<gender<<endl;
+                    cout << "----------------------------------\n";
+                    cout << "| (11078) Latur EX.              |\n";
+                    cout << "| 10:00(AM)-------------08:00(PM)|\n";
+                    cout << "----------------------------------\n";
+                    }
+                    else
+                    {
+                    cout << "\nThank you for visiting our website.";
+                    }
+					break;
+				}
+				case 2:
+				{
+				    cout << "----------------------------------\n";
+                    cout << "| (11078) Pune(L) EX.            |\n";
+                    cout << "| 09:30(PM)-------------08:00(AM)|\n";
+                    cout << "----------------------------------\n";
+                    
+                    char name[100];
+                    char gender[45];
+                    int age;
+					cout<<"\n\nEnter your name :";
+                    cin>>name;
+                    cout<<"\nEnter your age :";
+                    cin>>age;
+                    cout<<"\nEnter your gender(M/F):";
+                    cin>>gender;
+                    
+                    int ticketPrice;
+
+                    if (age <= 18)
+                    {
+                    ticketPrice = 200;
+                    cout<<"\nPrice:200";
+                    }
+                    else if (age <= 5)
+                    {
+                    ticketPrice = 0;
+                    cout<<"\nPrice:0";
+                    }
+                    else if (age >= 70)
+                    {
+                    ticketPrice = 100;
+                    cout<<"\nPric:100";
+                    }
+                    else
+                    {
+                    ticketPrice = 450;
+                    cout<<"\nPrice:450";
+                    }
+
+                    char reply[10];
+                    cout << "\nYou want to confirm your ticket (yes/no): ";
+                     cin >> reply;
+
+                    if (strcmp(reply, "yes") == 0)
+                    {
+                    cout << "\nYour Ticket Is Confirmed .. \nYour Ticket:\n";
+                     cout<<"Your name:"<<name<<endl;
+                    cout<<"Your Age:"<<age<<endl;
+                    cout<<"Your Gender:"<<gender<<endl;
+                    cout << "----------------------------------\n";
+                    cout << "| (11078) Pune(L) EX.            |\n";
+                    cout << "| 09:30(PM)-------------08:00(AM)|\n";
+                    cout << "----------------------------------\n";
+                    }
+                    else
+                    {
+                    cout << "\nThank you for visiting our website.";
+                    }
+					break;
+				}
+			} 
+            break; // Added break to exit the switch case
+            }
+            
+            default:
+            {
+            cout << "INVALID choice.. :( :(";
+            break; // Added break to exit the switch case
+            }
+        }
+        break;
+    }
+  
+    
+    case 2:
+    {
+        cout << "\n======================";
+        cout << "\n   Train Schedule:\n";
+        cout << "\n======================";
+        cout << "\n\n";
+        
+        cout << "FOR TODAY\n\n";
+        
+        cout << "----------------------------------\n";
+        cout << "| (12567) HYDERABAD EX.          |\n";
+        cout << "| 10:30(AM)-------------06:00(PM)|\n";
+        cout << "----------------------------------\n";
+
+        cout << "----------------------------------\n";
+        cout << "| (12567) Pune(s) EX.            |\n";
+        cout << "| 07:30(PM)-------------03:00(AM)|\n";
+        cout << "----------------------------------\n";
+        
+        cout << "----------------------------------\n";
+        cout << "| (11078) Latur EX.              |\n";
+        cout << "| 10:00(AM)-------------08:00(PM)|\n";
+        cout << "----------------------------------\n";
+
+        cout << "----------------------------------\n";
+        cout << "| (11078) Pune(L) EX.            |\n";
+        cout << "| 09:30(PM)-------------08:00(AM)|\n";
+        cout << "----------------------------------\n";
+
+        break;
+    }
+    case 3:
+    {
+        cout << "\nGoodbye! Have a nice day.\n";
+        break;
+    }
+    default:
+    {
+        cout << "Invalid choice.. ";
+        break;
+    }
+    }
+    return 0;
+}
+
+};
+int main()
+{
+	train  a(),p,*t;
+	t=&p;
+	t->procedure();
+	return 0;
+}
